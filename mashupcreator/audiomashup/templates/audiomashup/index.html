@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Mashup</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700&family=Nunito+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- <style>/* Bordered form */
+        form {
+          border: 3px solid #f1f1f1;
+        }
+        
+        /* Full-width inputs */
+        input[type=text], input[type=password] {
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          box-sizing: border-box;
+        }
+        
+        /* Set a style for all buttons */
+        button {
+          background-color: #04AA6D;
+          color: white;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          cursor: pointer;
+          width: 100%;
+        }
+        
+        /* Add a hover effect for buttons */
+        button:hover {
+          opacity: 0.8;
+        }
+        
+        /* Extra style for the cancel button (red) */
+        .cancelbtn {
+          width: auto;
+          padding: 10px 18px;
+          background-color: #f44336;
+        }
+        
+        /* Center the avatar image inside this container */
+        .imgcontainer {
+          text-align: center;
+          margin: 24px 0 12px 0;
+        }
+        
+        /* Avatar image */
+        img.avatar {
+          width: 40%;
+          border-radius: 50%;
+        }
+        
+        /* Add padding to containers */
+        .container {
+          padding: 16px;
+        }
+        
+        /* The "Forgot password" text */
+        span.psw {
+          float: right;
+          padding-top: 16px;
+        }
+        
+        /* Change styles for span and cancel button on extra small screens */
+        @media screen and (max-width: 300px) {
+          span.psw {
+            display: block;
+            float: none;
+          }
+          .cancelbtn {
+            width: 100%;
+          }
+        }
+        </style> -->
+
+    <style>
+        @import "compass/css3";
+
+        body {
+            /* background: #2A2B31; */
+            background-image: url("https://images.adsttc.com/media/images/5bf3/8f5f/08a5/e509/1100/01ce/large_jpg/-_Featured_Image.jpg?1542688591");
+            font-family: 'Fira Sans', sans-serif;
+            font-family: 'Nunito Sans', sans-serif;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font: 16px 'Helvetica Neue', Helvetica, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* height: 100vh; */
+        }
+
+        /* // --- PANEL --- */
+
+        @media screen and (max-width: 300px) {
+            span.psw {
+                display: block;
+                float: none;
+            }
+        }
+
+
+        .panel {
+            background: rgba(255, 255, 255, 0.901);
+            /* opacity: 0.9; */
+            width: 300px;
+            /* border: 1px solid #46464C; */
+            border-radius: 10px;
+            padding: 40px;
+            /* box-shadow: 1px 3px red; */
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+            margin: 70px auto;
+        }
+
+        .panel__avatar {
+            background: #fff;
+            border: 8px solid #46393D;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 0 auto 40px;
+            display: block;
+        }
+
+        /* // --- INPUTS --- */
+
+        .inputs__item {
+            padding-bottom: 40px;
+        }
+
+        .inputs__label {
+            color: #A64C41;
+            display: block;
+        }
+
+        .inputs__input {
+            border: none;
+            border-bottom: 1px solid #6B6C70;
+            background: inherit;
+            color: #000;
+            display: block;
+            width: 100%;
+            padding: 10px 0;
+            font: 16px 'Helvetica Neue', Helvetica, sans-serif;
+            color: #A64C41;
+            outline: none;
+
+            /* &:focus {
+      outline: none;
+    } */
+        }
+
+        .inputs__item--new .inputs__label,
+        .inputs__input {
+            color: #6498BB;
+        }
+
+
+        .inputs__item--cta {
+            text-align: center;
+            padding-bottom: 0;
+            padding-top: 20px;
+        }
+
+        /* // --- BTN --- */
+
+        .btn {
+            border: none;
+            background: #A64C41;
+            color: #C8BDA0;
+            font-size: 20px;
+            border-radius: 3px;
+            padding: 12px 50px;
+            cursor: pointer;
+        }
+
+        .heading {
+            text-align: center;
+            color: #46393D;
+        }
+
+        .tex {
+            border-radius: 5px;
+            height: 20px;
+            width: 200px;
+            margin-top: 10px;
+        }
+
+        .enroll {
+            color: #46393D;
+        }
+
+        span.psw {
+            text-align: center;
+            display: block;
+            padding-top: 16px;
+            color: #46393D;
+            margin-right: 0px;
+        }
+
+        #butto {
+            float: left;
+        }
+    </style>
+
+</head>
+
+<body alink="#46393D" vlink="#46393D" link="#46393D">
+    <div id="loader"></div>
+
+
+    <div class="panel">
+        <img class="panel__avatar"
+            src="https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_3,f_auto,g_center,h_175,q_auto:good,w_175/v1/gcs/platform-data-dsc/events/TI_LOGO_1lqNVbw.png"
+            alt="avatar" />
+        <h1 class="heading">Audio Mashup</h1>
+        <form action="{% url 'mix' %}" method="POST" class="inputs">
+            {% csrf_token %}
+            <div class="inputs__item inputs__item--new">
+                <input type="text" name="singer" placeholder="Singer Name" class="inputs__input" id="previous-password"
+                    required />
+            </div>
+            <div class="inputs__item inputs__item--new">
+                <input type="number" name="num" placeholder="Number of Audios" class="inputs__input"
+                    id="previous-password" required />
+            </div>
+            <div class="inputs__item inputs__item--new">
+
+                <input type="number" name="dur" placeholder="Duration Of Each Audio" class="inputs__input"
+                    id="previous-password" required />
+            </div>
+            <div class="inputs__item inputs__item--new">
+
+                <input type="text" name="email" placeholder="Email" class="inputs__input" id="previous-password"
+                    required />
+            </div>
+            <div class="inputs__item inputs__item--cta">
+                <button type="submit" class="btn">Generate</button><br>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
