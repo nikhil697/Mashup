@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-^6kdpaf@f(i+qb7n338+0#n&&pw(wl^7(%n*nny$+0ij8k85as
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['mashup-1.onrender.com/audiomashup']
+ALLOWED_HOSTS = ['mashup-1.onrender.com']
 
 
 # Application definition
