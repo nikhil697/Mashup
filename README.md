@@ -7,22 +7,25 @@ This project is a web application that allows users to create audio mashups by c
 ## Features
 
 - **User Input Form:**
+
   - Enter the singer's name.
   - Specify the number of videos to include in the mashup.
   - Set the duration (in seconds) for each audio clip.
   - Provide an email address to receive the final mashup.
 
 - **YouTube Integration:**
+
   - Retrieve YouTube video IDs based on the singer's name.
   - Download audio streams from randomly selected videos.
 
 - **Audio Processing:**
+
   - Combine audio clips to create a final mashup.
   - Allow users to customize the duration of each audio clip.
 
 - **Email Notification:**
   - Send the final mashup as a zip file to the user's email.
- 
+
 ## Technologies Used
 
 - Django
