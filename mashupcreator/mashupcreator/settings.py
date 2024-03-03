@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-^6kdpaf@f(i+qb7n338+0#n&&pw(wl^7(%n*nny$+0ij8k85as'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['mashup-1.onrender.com']
+ALLOWED_HOSTS = ['mashup-1.onrender.com/audiomashup']
 
 
 # Application definition
